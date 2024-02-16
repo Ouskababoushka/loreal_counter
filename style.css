@@ -1,0 +1,63 @@
+body {
+  background: white;
+  color: black;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0; /* Ensure there are no default margins */
+  height: 100vh; /* Full viewport height to enable centering */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 10rem; /* Adjust based on your design preference */
+  font-size: 3rem;
+  text-align: center; /* Ensure text is centered */
+}
+
+.counter {
+  /* If you want the counter itself to be flex, you can uncomment this */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  font-size: 10rem;
+  color: blueviolet;
+  /* Removed the left positioning to ensure it stays centered */
+}
+
+.credit {
+  position: fixed;
+  bottom: 20px;
+  left: 60px;
+  font-size: 16px;
+}
+
+.counter-value {
+  position: absolute;
+  transform-origin: 0 100%;
+  transform: skew(20deg, 0);
+  overflow: hidden;
+  padding-right: 30px;
+  height: 1em;
+  /* Center the counter value if necessary */
+  left: 50%;
+  transform: translateX(-50%) skew(20deg, 0); /* Adjust for centering */
+}
+
+.counter-value-mask {
+  position: absolute;
+  transform-origin: 0 100%;
+  transform: skew(-20deg);
+  overflow: hidden;
+  line-height: 1em;
+}
