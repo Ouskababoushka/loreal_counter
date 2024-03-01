@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var n=200; // Start from 200
-  setInterval(increment,3000);
+  setInterval(increment,500);
   function increment(){
     n++;
     if (n > 3200) { // Reset to 200 when n exceeds 3200
@@ -13,7 +13,7 @@ $(document).ready(function(){
     var old=counter.children(".counter-value");
     var oldContent=old.children(".counter-value-mask");
 
-    var t=0.4;
+    var t=0.5;
     var d=t*0.0;
     var d2=t*0.3;
     var padding=55;
