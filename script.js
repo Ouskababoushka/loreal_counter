@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  var n=200; // Start from 200
+  var n=2150; // Start from 2150
   setInterval(increment,500);
   function increment(){
-    n++;
-    if (n > 3200) { // Reset to 200 when n exceeds 3200
-      n = 200;
+    n+= 10;
+    if (n > 8000) { // Reset to 2150 when n exceeds 8000
+      n = 2000;
     }
     setCounter(n);
   }
